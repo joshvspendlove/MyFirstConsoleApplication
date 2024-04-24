@@ -34,7 +34,7 @@ namespace MyFirstConsoleApplication
             int daysTilChristmas;
             if (today > christmas)
             {
-                christmas = DateTime.Parse("12/25/" + (today.Year + 1));
+                christmas = getDate("12/25/" + (today.Year + 1));
             }
             daysTilChristmas = (christmas - today).Days;
             return daysTilChristmas;
